@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import { ReportNav } from "@/components/navigation/ReportNav";
+import { AccessGate } from "@/components/auth/AccessGate";
 
 const sofiaSans = Sofia_Sans({
   variable: "--font-sofia-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sofiaSans.variable} ${poppins.variable} antialiased`}>
+        <AccessGate />
         <ReportNav />
         {children}
       </body>

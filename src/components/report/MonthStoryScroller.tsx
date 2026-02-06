@@ -47,7 +47,7 @@ const renderLeftLabel = (props: any, formatter: (val: number) => string, metricN
       {metricName} {formatter(value)}
       {yoyText && (
         <tspan fontSize={11} fontWeight={500} dy={0} dx={6} fill="rgba(255,255,255,0.9)">
-          ({yoyText})
+          {yoyText}
         </tspan>
       )}
     </text>
@@ -440,6 +440,7 @@ function MetricsTable({
           ))}
         </tbody>
       </table>
+      <p className="mt-2 text-[10px] italic text-slate-500">All metric compared to previous year period</p>
     </div>
   );
 }

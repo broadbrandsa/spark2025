@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,10 +25,19 @@ export function ReportNav() {
 
         <div className="flex items-center gap-6 text-p2 font-semibold">
           <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-tight text-white/70">
-            <span>Confidential Board Deck</span>
-            <span>•</span>
-            <span>Jan 2026 Update</span>
+            <span>Feb 25 - Jan 26 • Confidential</span>
           </div>
+          <button
+            type="button"
+            onClick={() => {
+              fetch("/api/access", { method: "DELETE" }).finally(() => {
+                window.dispatchEvent(new Event("spark-report-lock"));
+              });
+            }}
+            className="rounded-full border border-white/40 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white/80 transition hover:border-white hover:text-white"
+          >
+            Hide Report
+          </button>
         </div>
       </div>
     </nav>

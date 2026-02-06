@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fcfcfd;
+  --text: #2b0430;
+  --accent-soft: #c8dae3;
+  --accent-pink: #801078;
+  --accent-blue: #1f49c9;
+  --h1: 50px;
+  --h2: 40px;
+  --h3: 20px;
+  --p1: 18px;
+  --p2: 14px;
+}
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --shadow-sm: 0 0 42px rgba(0, 0, 0, 0.05);
+  --shadow: 0 0 42px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 0 42px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 0 42px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 0 42px rgba(0, 0, 0, 0.05);
+  --shadow-2xl: 0 0 42px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: var(--p1);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-sofia-sans), sans-serif;
+  color: var(--text);
+}
+
+h1 {
+  font-size: var(--h1);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+.text-p2 {
+  font-size: var(--p2);
+}
+
+.report-section {
+  border: 1px solid var(--accent-soft);
+  border-radius: 1rem;
+  box-shadow: 0 0 42px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  overflow: hidden;
+}

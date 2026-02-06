@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Annual Marketing Performance Report | SPARK Schools</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #FF4D15;
+            --secondary: #1A0E31;
+            --accent: #2D5BE3;
+            --bg-report: #FDFDFB;
+        }
+        @layer base {
+            body {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: var(--bg-report);
+                color: #1a1a1a;
+            }
+        }
+        .report-section {
+            @apply bg-white border border-slate-100 rounded-2xl shadow-sm mb-12 p-10 overflow-hidden;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF4D15",
+                        secondary: "#1A0E31",
+                        accent: "#2D5BE3",
+                        "background-light": "#FDFDFB",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="antialiased">
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-[1400px] mx-auto px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<img alt="Spark Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0MIRCyXMhKaXJVB9eVBz4lWHM96yEWl7FOSDljPH9TkmyZ2G30BcpSf8pSdc1w_fK_QKQ5eYMcB5EaaOXapvZ-Ltj6HC64RwXA3hCx4qtO71kwqtmVzLhaHEM4RT4eWBRnjaY9eXhymczVc0SBSnzDcQ5AeI8AumoDrgVMHkCq7mGrmQOZK97ocOyVPOYbN2XQEQhoVVlvyTuyOxMBGAXbSq19v4VWTiMvR8_1GI9MBpiOLE0OaZ1Z7VSb69UchtpEHL3Ib4DJEU"/>
+<div class="h-6 w-[1px] bg-slate-200 mx-2"></div>
+<h1 class="font-bold text-sm tracking-widest text-secondary uppercase">2025 Performance Report</h1>
+</div>
+<div class="flex items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-tighter">
+<span>Confidential Board Deck</span>
+<span>•</span>
+<span>Jan 2026 Update</span>
+</div>
+</div>
+</nav>
+<main class="max-w-[1400px] mx-auto px-10 py-16">
+<header class="mb-16">
+<div class="max-w-4xl">
+<p class="text-primary font-bold tracking-widest uppercase text-xs mb-4">Marketing Operations</p>
+<h1 class="text-5xl md:text-6xl font-extrabold text-secondary mb-8 leading-[1.1]">
+                Marketing Performance Review:<br/>
+<span class="text-slate-400">2025 – January 2026</span>
+</h1>
+</div>
+<div class="max-w-5xl">
+<div class="bg-white p-12 rounded-2xl border border-slate-100 shadow-sm">
+<h2 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Executive Summary</h2>
+<div class="prose prose-slate prose-lg max-w-none">
+<p class="text-slate-700 leading-[1.8] font-medium italic">
+                        The 2025 fiscal year marked a significant pivot toward operational efficiency and high-intent digital acquisition. Following a strategic restructuring of our paid media stack in Q2, SPARK Schools realized a sustained reduction in Blended CPL while scaling lead volume across both primary and secondary portfolios. This report details the narrative of our growth, highlighting the dominance of organic search authority and the tactical precision of our performance marketing channels.
+                    </p>
+</div>
+</div>
+</div>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Total Leads</p>
+<div class="text-3xl font-extrabold text-secondary">42,810</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. 38,200 LY</span>
+<span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>+12% vs LY
+                </span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Paid Leads</p>
+<div class="text-3xl font-extrabold text-secondary">24,192</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. 22,400 LY</span>
+<span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>+8% vs LY
+                </span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Organic Leads</p>
+<div class="text-3xl font-extrabold text-secondary">18,618</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. 15,800 LY</span>
+<span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>+17.8% vs LY
+                </span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Total Paid Spend</p>
+<div class="text-3xl font-extrabold text-secondary">R5.2M</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. R4.8M LY</span>
+<span class="text-xs font-bold text-slate-500 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>+4.2% vs LY
+                </span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Blended CPL</p>
+<div class="text-3xl font-extrabold text-secondary">R138</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. R154 LY</span>
+<span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_down</span>-10.3% vs LY
+                </span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Total Clicks</p>
+<div class="text-3xl font-extrabold text-secondary">482K</div>
+<div class="mt-4 flex flex-col">
+<span class="text-xs text-slate-400">vs. 412K LY</span>
+<span class="text-xs font-bold text-emerald-600 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>+17% vs LY
+                </span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 gap-8 mb-12">
+<div class="report-section">
+<h3 class="text-lg font-bold text-secondary mb-6 flex items-center gap-2">
+                Leads by Month <span class="text-slate-400 font-normal">(Total, Paid, Organic)</span>
+</h3>
+<div class="h-[300px] w-full">
+<canvas id="leadsChart"></canvas>
+</div>
+</div>
+<div class="report-section">
+<h3 class="text-lg font-bold text-secondary mb-6 flex items-center gap-2">
+                Paid CPL Trends <span class="text-slate-400 font-normal">(Meta, Google, Blended)</span>
+</h3>
+<div class="h-[300px] w-full">
+<canvas id="cplChart"></canvas>
+</div>
+</div>
+</div>
+<section class="report-section">
+<div class="flex items-center gap-4 mb-8">
+<span class="p-3 bg-secondary rounded-lg text-white material-symbols-outlined">payments</span>
+<h3 class="text-xl font-extrabold text-secondary">Paid Media Strategic Overview</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-6 gap-8 border-b border-slate-100 pb-10 mb-10">
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Paid Spend</p>
+<p class="text-2xl font-bold text-secondary">R5,240,000</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Total Leads</p>
+<p class="text-2xl font-bold text-secondary">24,192</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Blended CPL</p>
+<p class="text-2xl font-bold text-secondary">R138</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Total Clicks</p>
+<p class="text-2xl font-bold text-secondary">482,400</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Avg. CPC</p>
+<p class="text-2xl font-bold text-secondary">R10.86</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Avg. CTR</p>
+<p class="text-2xl font-bold text-secondary">5.24%</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-slate-50/50 p-8 rounded-xl border border-slate-100">
+<div class="flex items-center gap-3 mb-6">
+<svg class="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+<h4 class="font-bold text-secondary">Meta Ads Summary</h4>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Spend</p>
+<p class="text-lg font-bold">R2.4M</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Leads</p>
+<p class="text-lg font-bold">14,200</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">CPL</p>
+<p class="text-lg font-bold">R169</p>
+</div>
+</div>
+</div>
+<div class="bg-slate-50/50 p-8 rounded-xl border border-slate-100">
+<div class="flex items-center gap-3 mb-6">
+<svg class="w-6 h-6 text-[#EA4335]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+<h4 class="font-bold text-secondary">Google Ads Summary</h4>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Spend</p>
+<p class="text-lg font-bold">R2.8M</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Leads</p>
+<p class="text-lg font-bold">9,992</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">CPL</p>
+<p class="text-lg font-bold">R280</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+<div class="report-section mb-0">
+<h3 class="text-xl font-extrabold text-secondary mb-8">SEO &amp; Organic Engagement</h3>
+<div class="grid grid-cols-2 gap-8 mb-10">
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Organic Leads</p>
+<p class="text-3xl font-extrabold text-secondary">18,618</p>
+<span class="text-xs font-bold text-emerald-600">+24% YoY</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Avg. Conversion Rate</p>
+<p class="text-3xl font-extrabold text-secondary">6.8%</p>
+<span class="text-xs font-bold text-emerald-600">Stable</span>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Top Regions (by Sessions)</h4>
+<ul class="space-y-4">
+<li class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<span class="text-sm font-semibold">Gauteng</span>
+<span class="text-sm font-bold">642,000</span>
+</li>
+<li class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<span class="text-sm font-semibold">Western Cape</span>
+<span class="text-sm font-bold">218,500</span>
+</li>
+<li class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+<span class="text-sm font-semibold">KwaZulu-Natal</span>
+<span class="text-sm font-bold">144,200</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="report-section mb-0 bg-secondary text-white border-0">
+<h3 class="text-xl font-extrabold mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent">query_stats</span> Search Console Panel
+            </h3>
+<div class="grid grid-cols-3 gap-4 mb-10">
+<div class="bg-white/5 p-4 rounded-xl border border-white/10">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Clicks</p>
+<p class="text-xl font-bold">1.2M</p>
+</div>
+<div class="bg-white/5 p-4 rounded-xl border border-white/10">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Impressions</p>
+<p class="text-xl font-bold">42.8M</p>
+</div>
+<div class="bg-white/5 p-4 rounded-xl border border-white/10">
+<p class="text-[10px] font-bold text-slate-400 uppercase mb-1">Avg. Position</p>
+<p class="text-xl font-bold">4.2</p>
+</div>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Top 10 Queries</h4>
+<div class="overflow-hidden">
+<table class="w-full text-left text-sm">
+<thead class="text-slate-500 font-bold border-b border-white/10">
+<tr>
+<th class="pb-3">Query Keyword</th>
+<th class="pb-3 text-right">Clicks</th>
+</tr>
+</thead>
+<tbody class="text-slate-300">
+<tr class="border-b border-white/5"><td class="py-2.5">affordable private schools</td><td class="text-right">42,100</td></tr>
+<tr class="border-b border-white/5"><td class="py-2.5">schools near me</td><td class="text-right">38,402</td></tr>
+<tr class="border-b border-white/5"><td class="py-2.5">spark schools gauteng</td><td class="text-right">24,190</td></tr>
+<tr class="border-b border-white/5"><td class="py-2.5">high schools open for 2026</td><td class="text-right">18,550</td></tr>
+<tr class="border-b border-white/5"><td class="py-2.5">private school fees 2026</td><td class="text-right">12,100</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+<div class="report-section mb-0 border-l-4 border-l-primary">
+<h3 class="text-2xl font-extrabold text-secondary mb-6">What we did this year</h3>
+<div class="prose prose-slate">
+<ul class="space-y-4 text-slate-600 leading-relaxed list-none pl-0">
+<li class="flex gap-4">
+<span class="text-primary font-bold">01.</span>
+<span>Complete overhaul of the enrollment funnel, reducing friction in the multi-step form and increasing mobile conversion rates by 14%.</span>
+</li>
+<li class="flex gap-4">
+<span class="text-primary font-bold">02.</span>
+<span>Migration to a more efficient local search strategy, prioritizing school-specific Google Business Profiles which drove record-high local intent traffic.</span>
+</li>
+<li class="flex gap-4">
+<span class="text-primary font-bold">03.</span>
+<span>Launched the "Scholar Stories" video series on Meta, which maintained a 40% higher retention rate than previous brand content.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="report-section mb-0 border-l-4 border-l-secondary">
+<h3 class="text-2xl font-extrabold text-secondary mb-6">Challenges</h3>
+<div class="prose prose-slate">
+<ul class="space-y-4 text-slate-600 leading-relaxed list-none pl-0">
+<li class="flex gap-4">
+<span class="text-secondary font-bold">A.</span>
+<span>CPM inflation on Meta during Q4 peak season required defensive bidding strategies that momentarily increased acquisition costs.</span>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold">B.</span>
+<span>Highly competitive search environment for "High School" keywords in the Western Cape, leading to a focus on niche long-tail SEO.</span>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold">C.</span>
+<span>Attribution gaps between online leads and physical school visits remain a hurdle for perfectly accurate ROI modeling.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="mt-20 py-12 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-6">
+<img alt="Spark Logo" class="h-6 opacity-30 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0MIRCyXMhKaXJVB9eVBz4lWHM96yEWl7FOSDljPH9TkmyZ2G30BcpSf8pSdc1w_fK_QKQ5eYMcB5EaaOXapvZ-Ltj6HC64RwXA3hCx4qtO71kwqtmVzLhaHEM4RT4eWBRnjaY9eXhymczVc0SBSnzDcQ5AeI8AumoDrgVMHkCq7mGrmQOZK97ocOyVPOYbN2XQEQhoVVlvyTuyOxMBGAXbSq19v4VWTiMvR8_1GI9MBpiOLE0OaZ1Z7VSb69UchtpEHL3Ib4DJEU"/>
+<p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Board Report 2025/26 • SPARK Schools</p>
+</div>
+<div class="text-[10px] text-slate-400 font-medium uppercase flex gap-8">
+<span class="cursor-help">Institutional Confidential</span>
+<span class="cursor-help">Audited Data</span>
+<span class="cursor-help">Internal View Only</span>
+</div>
+</div>
+</footer>
+</main>
+<script>
+    Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
+    Chart.defaults.color = '#94a3b8';
+    // Leads Chart
+    const leadsCtx = document.getElementById('leadsChart').getContext('2d');
+    new Chart(leadsCtx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+            datasets: [
+                {
+                    label: 'Total Leads',
+                    data: [2800, 3100, 3500, 3200, 3800, 3600, 4200, 4500, 4300, 4800, 5200, 4100, 4900],
+                    borderColor: '#1A0E31',
+                    borderWidth: 3,
+                    pointRadius: 0,
+                    tension: 0.4
+                },
+                {
+                    label: 'Paid Leads',
+                    data: [1600, 1800, 2100, 1900, 2200, 2100, 2400, 2600, 2500, 2800, 3100, 2400, 2900],
+                    borderColor: '#FF4D15',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    tension: 0.4
+                },
+                {
+                    label: 'Organic Leads',
+                    data: [1200, 1300, 1400, 1300, 1600, 1500, 1800, 1900, 1800, 2000, 2100, 1700, 2000],
+                    borderColor: '#2D5BE3',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    tension: 0.4
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'top', align: 'end', labels: { boxWidth: 10, usePointStyle: true } } },
+            scales: {
+                y: { grid: { color: '#f1f5f9' }, border: { display: false } },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+    // CPL Chart
+    const cplCtx = document.getElementById('cplChart').getContext('2d');
+    new Chart(cplCtx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+            datasets: [
+                {
+                    label: 'Meta CPL',
+                    data: [160, 155, 170, 165, 150, 145, 160, 175, 180, 185, 190, 170, 169],
+                    borderColor: '#2D5BE3',
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    tension: 0.2
+                },
+                {
+                    label: 'Google CPL',
+                    data: [290, 280, 285, 275, 270, 265, 270, 280, 295, 310, 305, 290, 280],
+                    borderColor: '#FF4D15',
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    tension: 0.2
+                },
+                {
+                    label: 'Blended CPL',
+                    data: [155, 150, 158, 152, 144, 140, 148, 155, 158, 162, 165, 148, 138],
+                    borderColor: '#1A0E31',
+                    borderWidth: 4,
+                    pointRadius: 0,
+                    tension: 0.4
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'top', align: 'end', labels: { boxWidth: 10, usePointStyle: true } } },
+            scales: {
+                y: { grid: { color: '#f1f5f9' }, border: { display: false } },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+</script>
+
+</body></html>
